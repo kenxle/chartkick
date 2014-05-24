@@ -291,7 +291,7 @@
       var jsOptions = jsOptionsFunc(defaultOptions, hideLegend, setMin, setMax, setStacked);
 
       this.renderLineChart = function (chart, chartType) {
-        chartType = chartType || "spline";
+        chartType = chartType || "line"; //FIXME make this option available from Ruby. This option only exists at this spot in the js. 
         var chartOptions = {};
         if (chartType === "areaspline") {
           chartOptions = {
